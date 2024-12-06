@@ -12,7 +12,7 @@
     - name: Register the newly-created VM instance
       servicenow.itsm.configuration_item:
         instance:
-          host: lvmhpcis.service-now.com
+          host: https://lvmhpcis.service-now.com
           username: test
           password: test
         name: "{{ instance.name }}"
