@@ -12,9 +12,9 @@
     - name: Register the newly-created VM instance
       servicenow.itsm.configuration_item:
         instance:
-          host: https://lvmhpcis.service-now.com
-          username: test
-          password: test
+          host: https://lvmhpcisdev.service-now.com/
+          username: ansible_service_user
+          password: bi5gBF2CFT=w[BN
         name: "{{ instance.name }}"
         sys_class_name: cmdb_ci_vm_instance
         ip_address: "{{ instance.public_ip_address }}"
